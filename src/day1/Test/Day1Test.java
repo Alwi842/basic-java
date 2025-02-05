@@ -57,16 +57,18 @@ public class Day1Test {
             }
             double totalAvg = (double) avg / mahasiswa[i].length;
 //            System.out.println("Average for mahasiswa " + i + ": " + totalAvg);
-            if (totalAvg>=25){
+            if (totalAvg>=9){
                 System.out.println("nilai mahasiswa "+(i+1)+" "+ grade.A);
-            } else if (totalAvg>=20){
+            } else if (totalAvg>=8){
                 System.out.println("nilai mahasiswa "+(i+1)+" "+ grade.B);
-            } else if (totalAvg>=15){
+            } else if (totalAvg>=7){
                 System.out.println("nilai mahasiswa "+(i+1)+" "+ grade.C);
-            } else if (totalAvg>=10){
+            } else if (totalAvg>=6){
                 System.out.println("nilai mahasiswa "+(i+1)+" "+ grade.D);
-            } else {
+            } else if (totalAvg>=5){
                 System.out.println("nilai mahasiswa "+(i+1)+" "+ grade.E);
+            } else {
+                System.out.println("nilai mahasiswa "+(i+1)+" "+ grade.F);
             }
         }
 
