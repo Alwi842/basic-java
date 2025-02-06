@@ -71,7 +71,6 @@ public class Day1Test {
                 System.out.println("nilai mahasiswa "+(i+1)+" "+ grade.F);
             }
         }
-
     }
     public static Boolean isPrime(int num){
         if (num<=1) {
