@@ -30,12 +30,39 @@ public class ProductMain {
 
                 productController.addProduct(products);
             }
-            System.out.println("===PRODUCT LIST===");
-            productController.displayAllProduct();
-            System.out.println("==================");
         } else {
-            System.out.println("dadah");
+            //buat metod read file produk
+            productController.getProduct();
         }
 
+        System.out.println("===PRODUCT LIST===");
+        productController.displayAllProduct();
+        System.out.println("==================");
+        //PR BRO
+        //SORT METHOD
+        System.out.println("===SORT PRODUCT BY PRICE===");
+        System.out.println("1. Sort ascending");
+        System.out.println("2. Sort descending");
+        choice=input.nextLine();
+        System.out.println(choice);
+        if (choice.equals("1")){
+            productController.sortItemAscending();
+        } else if (choice.equals("2")){
+            productController.sortItemDescending();
+        }
+
+
+        System.out.println("==================");
+
+        System.out.println("Apakah anda ingin mencari produk?y/n");
+        //metod &logic untuk mencari produk berdasarkan nama
+        choice=input.nextLine();
+        if (choice.toLowerCase().equals("y")){
+            System.out.println("Masukan nama produk");
+            choice=input.nextLine();
+            productController.searchItem(choice);
+        }
+        //save produk ke file
+        productController.storeProduct();
     }
 }

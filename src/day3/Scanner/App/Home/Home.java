@@ -1,5 +1,10 @@
 package day3.Scanner.App.Home;
 
+import day3.Scanner.App.Products.ProductMain;
+import day3.Scanner.App.Products.Products;
+import day3.Scanner.App.Review.Review;
+import day3.Scanner.App.Review.ReviewMain;
+
 import java.util.Scanner;
 
 public class Home {
@@ -21,13 +26,13 @@ public class Home {
                 System.out.println("Register sukses");
                 break;
             case PRODUCT:
-                System.out.println("produk kita");
+                ProductMain.main(null);
                 break;
             case CART:
                 System.out.println("cart ku");
                 break;
             case REVIEW:
-                System.out.println("review saya");
+                ReviewMain.main(null);
                 break;
             default:
                 System.out.println("input tidak valid");
