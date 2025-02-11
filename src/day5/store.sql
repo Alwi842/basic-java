@@ -116,6 +116,15 @@ INSERT INTO payment_detail (order_id, payment_method, amount, date) VALUES
 (2, 'Cash', 1199.99, '2024-02-12'), -- 1 Laptop
 (3, 'Debit Card', 29.97, '2024-02-13'); -- 3 Novels
 
+--retrive data from each table
+SELECT * FROM categiries;
+SELECT * FROM products;
+SELECT * FROM costumer;
+SELECT * FROM orders;
+SELECT * FROM order_items;
+SELECT * FROM product_review;
+SELECT * FROM payment_detail;
+
 -----JOIN QUERIES-----
 --join product with category to get product details with category name
 SELECT 
